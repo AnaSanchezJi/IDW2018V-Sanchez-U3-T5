@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>IDW2018V-Sanchez-U3-T5</title>
+</head>
+<body>
+        <div class="container">
+            <div class="container">
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                      <a href="#infor">Informatica</a>
+                  </li>
+                  <li>
+                      <a href="#mate">Matematicas</a>
+                  </li>
+                  <li>
+                      <a href="#quimi">Quimica</a>
+                  </li>                  
+                </ul>
+            
+                <div class="tab-content">
+                  <div id="infor" class="tab-pane fade in active">
+                     <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                             <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#word">Microsoft Word</a>
+                             </h4>
+                            </div>
+                            <div id="word" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                        Microsoft Word es un programa informático orientado al procesamiento de textos. 
+                                        Fue creado por la empresa Microsoft, y viene integrado predeterminadamente en 
+                                        el paquete ofimático denominado Microsoft Office.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                               <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#excel">Microsoft Excel</a>
+                                </h4>
+                            </div>
+                            <div id="excel" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                        Microsoft Excel es una aplicación de hojas de cálculo que forma parte de la suite 
+                                        de oficina Microsoft Office. Es una aplicación utilizada en tareas financieras y 
+                                        contables, con fórmulas, gráficos y un lenguaje de programación.
+                                </div>
+                            </div>
+                        </div>                               
+                     </div>
+                  </div>
+
+
+                  <div id="mate" class="tab-pane fade">
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#calcu">Calculadora</a>
+                                  </h4>
+                                </div>
+                                <div id="calcu" class="panel-collapse collapse">
+                                    <div class="container">                                               
+                                       <form>
+                                           <div class="form-group">
+                                                <p>Operación</p>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="optradio" checked>Suma</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="optradio">Resta</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="optradio" >Multiplicación</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label>Numero 1</label>
+                                                    <input type="number" class="form-control" id="pwd" name="pwd">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Numero 2</label>
+                                                <input type="number" class="form-control" id="pwd" name="pwd">
+                                            </div>
+                                            <h3>Resultado:</h3>                                                
+                                        </div>
+                                </div>
+                        </div>
+                        <p>Realiza Opereciones Matematicas</p>                              
+                  </div>
+                  <div id="quimi" class="tab-pane fade">
+                    <div class="container">                                   
+                        <table class="table table-bordered">
+                          <thead>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Materia<hr></td>
+                              <td>Componente principal de los cuerpos, susceptible de 
+                                  toda clase de formas y de sufrir cambios, que se 
+                                  caracteriza por un conjunto de propiedades físicas 
+                                  o químicas, perceptibles a través de los sentidos.
+                               </td>                              
+                            </tr>
+                            <tr>
+                              <td>Atomo<hr></td>
+                              <td>Un Átomo es la unidad de partículas más pequeñas 
+                                  que puede existir como sustancia simple (elemento químico), 
+                                  y que puede intervenir en una combinación química. Su 
+                                  termino en griego significa “no divisible”, propuesto 
+                                  por Demócrito y Leucipo, quienes suponían que la materia 
+                                 estaba formada por partículas indivisibles e indestructibles.
+                               </td>                              
+                            </tr>
+                            <tr>
+                              <td>Elemento<hr></td>
+                              <td>Un elemento químico es un tipo de materia, constituida por 
+                                  átomos de la misma clase, con un número determinado de protones 
+                                  en su núcleo. Tradicionalmente se define como aquella sustancia 
+                                  que no puede ser descompuesta mediante una reacción química, 
+                                  en otras más simples.</td>                            
+                            </tr>
+                            <tr>
+                                <td>Compuesto<hr></td>
+                                <td>En química, un compuesto químico es una sustancia formada por 
+                                    la combinación de dos o más elementos distintos de la tabla 
+                                    periódica.1​ Los compuestos son representados por una fórmula
+                                     química. Por ejemplo, el agua (H2O) está constituida por dos 
+                                     átomos de hidrógeno y uno de oxígeno.</td>                            
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>                  
+                </div>
+              </div>
+              
+              <script>
+              $(document).ready(function(){
+                  $(".nav-tabs a").click(function(){
+                      $(this).tab('show');
+                  });
+              });
+              </script>
+    
+</body>
+</html>
